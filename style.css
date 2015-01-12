@@ -1,0 +1,61 @@
+/* reset */
+html, body, a, div, ul, li, h1, h2 {
+    margin: 0; padding: 0; border: 0; outline: 0;
+    vertical-align: baseline; background: transparent; color: #444;
+    text-decoration: none; font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('fonts/Roboto-Light-webfont.eot');
+    src: url('fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Light-webfont.svg#RobotoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { font-family: 'RobotoRegular', 'Helvetica Neue', 'sans-serif'; font-size: 14px; }
+h1 *, h1 { font-family: 'RobotoLight', 'Helvetica Neue', 'sans-serif'; font-size: 36px; font-weight: normal; }
+a { text-decoration: none; }
+
+/* layout */
+.content { margin: 10em auto; width: 32em; padding: 2em; border-radius: 0.5em; }
+.credit { width: 100%; text-align: right; padding: 0.2em 0.5em; }
+.secret { display: block; margin-left: 75%; }
+.parts { margin: 1em auto; min-width: 34em; max-width: 68em; }
+.card { float: left; width: 32em; min-height: 21em; margin: 1em; padding: 2em; border-radius: 0.5em; }
+.card .badge { float: right; }
+
+/* colours */
+body { background: #333; background-image: url(skewed_print.png); }
+a, p { color: #bbb; }
+h1 { color: #ff6; }
+.prefix { color: #666; }
+.card,
+.content { background: #222; }
+.secret { color: #181818; }
+a.developer, .credit a, .credit { color: #333; }
+
+
+
