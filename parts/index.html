@@ -38,21 +38,50 @@
           </section>
 
           <section class="card">
-              <img class="badge" src="badge/status-alpha-green.svg" />
-              <h1>
-                <a href="https://gitlab.com/kuno/wald-view">
-                  <span class="prefix">wald:</span>view
-                </a>
-              </h1>
+              <img class="badge" src="badge/status-in_progress-yellow.svg" />
+              <h1><span class="prefix">wald:</span>view</h1>
               <p>
-                wald:view is a set of <a href="http://facebook.github.io/react/">React</a>
-                components and utility functions which you can use to query RDF datasets from
-                your own view templates.
+                  wald:view is the routing component of wald:meta, it glues together many
+                  of the other components to provide a user-friendly interface to your data.
               </p>
               <p>
-                  wald:view can load data from an embedded
-                  <a href="http://json-ld.org/">JSON-LD</a> document, or by querying a
-                  <a href="http://linkeddatafragments.org/">Linked Data Fragments</a> server.
+                  For a particular request wald:view will load the correct template, run
+                  the associated query, and render it as HTML (both client-side and server-side).
+              </p>
+              <p>
+                  It also provides a built-in template to render your vocabulary or ontology.
+              </p>
+          </section>
+
+          <section class="card">
+              <img class="badge" src="badge/status-alpha-green.svg" />
+              <h1>
+                  <a href="https://github.com/warpr/wald-find">
+                      <span class="prefix">wald:</span>find
+                  </a>
+              </h1>
+              <p>
+                  A query language which can be used (server-side and client-side) to query RDF
+                  datasets and turn the results into an ad-hoc model, which can be easily used
+                  with template languages such as <a href="https://mustache.github.io/">mustache</a>.
+              </p>
+          </section>
+
+          <section class="card">
+              <img class="badge" src="badge/status-planning-red.svg" />
+              <h1><span class="prefix">wald:</span>bind</h1>
+              <p>
+                  A client-side data binding extension to wald:find.  wald:bind can check
+                  for changes to a wald:find model and turn those changes into a
+                  <a href="http://vocab.org/changeset/schema.html#ChangeSet">cs:ChangeSet</a>.
+              </p>
+          </section>
+
+          <section class="card">
+              <img class="badge" src="badge/status-planning-red.svg" />
+              <h1><span class="prefix">wald:</span>tags</h1>
+              <p>
+                  Web components? to render models.
               </p>
           </section>
 
@@ -60,36 +89,10 @@
               <img class="badge" src="badge/status-planning-red.svg" />
               <h1><span class="prefix">wald:</span>form</h1>
               <p>
-                wald:form builds on wald:view and provides a set of
-                <a href="http://facebook.github.io/react/">React</a> components which are
-                used to build forms to edit your linked data.
+                  Web components? to edit models.
               </p>
           </section>
 
-          <section class="card">
-              <img class="badge" src="badge/status-planning-red.svg" />
-              <h1><span class="prefix">wald:</span>edit</h1>
-              <p>
-                <strike>wald:bind</strike> wald:edit glues together wald:form and wald:data by turning the edits
-                to your data into a
-                <a href="http://vocab.org/changeset/schema.html#ChangeSet">cs:ChangeSet</a>
-                which can be directly submitted to the wald:data backend.
-              </p>
-          </section>
-
-          <section class="card">
-              <img class="badge" src="badge/status-planning-red.svg" />
-              <h1>
-                  <a href="https://github.com/warpr/wald-find">
-                      <span class="prefix">wald:</span>spec
-                  </a>
-              </h1>
-              <p>
-                wald:spec builds on wald:view to make it easier to publish the vocabulary
-                / ontology for your datasets.
-              </p>
-          </section>
-<!--
           <section class="card">
               <img class="badge" src="badge/status-planning-red.svg" />
               <h1><span class="prefix">wald:</span>user</h1>
@@ -97,7 +100,6 @@
                   User management for a wald:meta site.
               </p>
           </section>
--->
 
           <section class="card">
               <img class="badge" src="badge/status-planning-red.svg" />
