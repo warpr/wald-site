@@ -16,7 +16,41 @@
       <div class="parts">
 
           <section class="card">
-              <img class="badge" src="badge/status-alpha-green.svg" />
+              <img class="badge" src="badge/status-planning-red.svg" />
+              <h1><span class="prefix">wald:</span>tags</h1>
+              <p>
+                  React components to render models.
+              </p>
+          </section>
+
+          <section class="card">
+              <a class="badge" href="https://gitlab.com/wald-meta/find/"><img alt="build status" src="https://gitlab.com/wald-meta/find/badges/master/build.svg" /></a>
+              <h1><span class="prefix">wald:</span>find</h1>
+              <p>
+                A library for querying RDF which can be used server-side and client-side.
+              </p>
+          </section>
+
+          <section class="card">
+              <img class="badge" src="badge/status-in_progress-yellow.svg" />
+              <h1><span class="prefix">wald:</span>grid</h1>
+              <p>
+                  React components to render forms for editing models.
+              </p>
+          </section>
+
+          <section class="card">
+              <a class="badge" href="https://gitlab.com/wald-meta/edit/"><img alt="build status" src="https://gitlab.com/wald-meta/edit/badges/master/build.svg" /></a>
+              <h1><span class="prefix">wald:</span>edit</h1>
+              <p>
+                A library to make and record changes to a dataset.  wald:edit
+                generates <a href="http://purl.org/vocab/changeset/schema#ChangeSet">cs:ChangeSet</a>
+                documents which can be processed by wald:data.
+              </p>
+          </section>
+
+          <section class="card">
+              <a class="badge" href="https://gitlab.com/wald-meta/data/"><img alt="build status" src="https://gitlab.com/wald-meta/data/badges/master/build.svg" /></a>
               <h1>
                 <a href="https://github.com/warpr/wald-data">
                   <span class="prefix">wald:</span>data
@@ -38,58 +72,18 @@
           </section>
 
           <section class="card">
-              <img class="badge" src="badge/status-in_progress-yellow.svg" />
-              <h1><span class="prefix">wald:</span>view</h1>
+              <a class="badge" href="https://gitlab.com/wald-meta/mint/"><img alt="build status" src="https://gitlab.com/wald-meta/mint/badges/master/build.svg" /></a>
+              <h1><span class="prefix">wald:</span>mint</h1>
               <p>
-                  wald:view is the routing component of wald:meta, it glues together many
-                  of the other components to provide a user-friendly interface to your data.
-              </p>
-              <p>
-                  For a particular request wald:view will load the correct template, run
-                  the associated query, and render it as HTML (both client-side and server-side).
-              </p>
-              <p>
-                  It also provides a built-in template to render your vocabulary or ontology.
-              </p>
-          </section>
-
-          <section class="card">
-              <img class="badge" src="badge/status-alpha-green.svg" />
-              <h1>
-                  <a href="https://github.com/warpr/wald-find">
-                      <span class="prefix">wald:</span>find
-                  </a>
-              </h1>
-              <p>
-                  A query language which can be used (server-side and client-side) to query RDF
-                  datasets and turn the results into an ad-hoc model, which can be easily used
-                  with template languages such as <a href="https://mustache.github.io/">mustache</a>.
+                A library for minting new identifiers, used by wald:data.
               </p>
           </section>
 
           <section class="card">
               <img class="badge" src="badge/status-planning-red.svg" />
-              <h1><span class="prefix">wald:</span>bind</h1>
+              <h1><span class="prefix">wald:</span>link</h1>
               <p>
-                  A client-side data binding extension to wald:find.  wald:bind can check
-                  for changes to a wald:find model and turn those changes into a
-                  <a href="http://vocab.org/changeset/schema.html#ChangeSet">cs:ChangeSet</a>.
-              </p>
-          </section>
-
-          <section class="card">
-              <img class="badge" src="badge/status-planning-red.svg" />
-              <h1><span class="prefix">wald:</span>tags</h1>
-              <p>
-                  Web components? to render models.
-              </p>
-          </section>
-
-          <section class="card">
-              <img class="badge" src="badge/status-planning-red.svg" />
-              <h1><span class="prefix">wald:</span>form</h1>
-              <p>
-                  Web components? to edit models.
+                wald:link is the routing component of wald:meta.
               </p>
           </section>
 
@@ -103,6 +97,29 @@
 
           <section class="card">
               <img class="badge" src="badge/status-planning-red.svg" />
+              <h1><span class="prefix">wald:</span>spec</h1>
+              <p>
+                A component to generate a specification document for the ontology or
+                vocabulary used by a wald:meta site.
+              </p>
+          </section>
+
+          <section class="card">
+              <img class="badge" src="badge/status-planning-red.svg" />
+              <h1><span class="prefix">wald:</span>whom</h1>
+              <p>
+                A component to generate a colophon or credits page.
+              </p>
+              <p>
+                This should traverse dependencies and automatically credit all third-party
+                authors and list their software licenses (similar to the
+                <a href="github.desktop.about.2016-01-04.png" target="_blank">GitHub
+                desktop app about screen</a>).
+              </p>
+          </section>
+<!--
+          <section class="card">
+              <img class="badge" src="badge/status-planning-red.svg" />
               <h1><span class="prefix">wald:</span>meta</h1>
               <p>
                   <a href="http://waldmeta.org">wald:meta</a>
@@ -113,7 +130,7 @@
                   will be a generic metadata database for linked data.
               </p>
           </section>
-
+-->
       </div>
 
     </body>
